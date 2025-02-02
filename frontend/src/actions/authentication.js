@@ -12,6 +12,7 @@ export const registerUser = (user, navigate) => dispatch => { //remove history h
                 payload = err.response.data; // Get data from the response if it exists
               } else {
                  // The error is probably from the network so handle accordingly
+                 // new comment
                  payload = {general: "Network Error or unexpected server error, please check your connection"};
                  console.error("An error occurred: ",err);
                }
